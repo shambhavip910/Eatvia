@@ -2,7 +2,6 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "Learning React from Namaste React",
-
   "keywords": [],
   "homepage": "https://github.com/shambhavip910/Namaste-React#readme",
   "bugs": {
@@ -16,15 +15,27 @@
   "author": "me-myself",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "parcel": "^2.16.0"
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "jsdom": "^27.1.0",
+    "vite": "^7.1.12",
+    "vitest": "^4.0.6"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.9.2",
+    "@tailwindcss/vite": "^4.1.16",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.9.4",
+    "tailwindcss": "^4.1.16"
   }
 }
